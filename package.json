@@ -1,0 +1,15 @@
+{
+  "id": "megamaker",
+  "name": "MegaMaker Club",
+  "version": "1.0.0",
+  "description": "MegaMaker Club",
+  "main": "index.js",
+  "author": "Alex Devero <deveroalex@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/alexdevero/franz-megamaker-club-recipe",
+  "config": {
+    "hasNotificationSound": false,
+    "hasIndirectMessages": true,
+    "serviceURL": "https://club.megamaker.co"
+  }
+}
