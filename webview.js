@@ -1,9 +1,13 @@
 module.exports = (Franz) => {
   const getMessages = function getMessages() {
     const directMessages = document.querySelectorAll('.d-header-icons .unread-notifications').length
-    const numOfMessages = parseInt(directMessages.innerHTML)
+    let numOfMessages = 0
 
-    Franz.setBadge(directMessages, numOfMessages)
+    if (directMessages > 0) {
+      numOfMessages = parseInt(document.querySelector('.d-header-icons .unread-notifications').innerText)
+    }
+
+    Franz.setBadge(numOfMessages)
   }
 
   Franz.loop(getMessages)
